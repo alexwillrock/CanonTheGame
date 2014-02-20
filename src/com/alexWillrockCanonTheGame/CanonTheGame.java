@@ -31,17 +31,17 @@ public class CanonTheGame extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        canonView.releaseResources(); //выгрузка из памяти
+        canonView.releaseResouces(); //выгрузка из памяти
     }
 
     @Override
-    public boolean OnTouchEvent(MotionEvent event){ //событие при касании экрана
+    public boolean onTouchEvent(MotionEvent event){ //событие при касании экрана
 
         int action = event.getAction(); // какое действие произошло
 
         if(action == MotionEvent.ACTION_DOWN || action == MotionEvent.ACTION_MOVE){
 
-            canonView.allignCannon(event); //нацеливание пушки
+            canonView.alingCannon(event); //нацеливание пушки
         }
 
         return gestureDetector.onTouchEvent(event);

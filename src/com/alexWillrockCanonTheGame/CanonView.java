@@ -1,7 +1,9 @@
 package com.alexWillrockCanonTheGame;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -354,6 +356,61 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
         }
     }
 
-    
+    private void showGameDialog(int messageId){
+        final AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getContext());
 
+        dialogBuilder.setTitle(getResources().getString(messageId)); //создаем диалог сообщения универсальый
+        dialogBuilder.setCancelable(false);
+
+        //отображает выстрелы и время общее
+        dialogBuilder.setMessage(getResources().getString(
+                R.string.result_format, shotfFired, totalTimeElapsed));
+        dialogBuilder.setPositiveButton(R.string.reset_game, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogIsDisplayed = false;
+                newGame(); //новая игра
+            }
+        });
+
+        activity.runOnUiThread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        dialogIsDisplayed = true;
+                        dialogBuilder.show(); //начинаем диалог
+                    }
+                }
+        );
+
+    }
+
+    public void stopGame(){
+        if(cannonThread != null){
+            cannonThread.setRunning(false);
+        }
+    }
+
+    public void releaseResouces(){
+        soundPool.release();
+
+        soundPool = null;
+    }
+
+
+    @Override
+    public void surfaceCreated(SurfaceHolder surfaceHolder) {
+
+    }
+
+    @Override
+    public void surfaceChanged(SurfaceHolder surfaceHolder, int format, int width, int heigth) {
+    }
+
+    @Override
+    public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
+
+    }
+
+    
 }
