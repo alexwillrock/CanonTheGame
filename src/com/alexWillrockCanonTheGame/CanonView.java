@@ -2,6 +2,7 @@ package com.alexWillrockCanonTheGame;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
@@ -14,7 +15,6 @@ import android.view.SurfaceView;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.SortedMap;
 
 public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
@@ -314,5 +314,46 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
         return angle;
     }
+
+    public void drawGameElements(Canvas canvas){
+
+        //очитска экрана
+        canvas.drawRect(0, 0, canvas.getWidth(), canvas.getHeight(), backgroundPaint);
+
+        //таймер оставшегося времени
+        canvas.drawText(getResources().getString(R.string.time_remaing_format, timeLeft), 30, 50, textPaint);
+
+        if(cannonballOnScreen){ //рисуем ядро на экран
+            canvas.drawCircle(cannonball.x, cannonball.y, cannonballRadius, cannonballPaint);
+        }
+
+        canvas.drawLine(0, screenHeigth / 2, barrelEnd.x, barrelEnd.y, cannonPaint); //рисуем ствола пушки
+
+        canvas.drawCircle(0, (int) screenHeigth / 2, (int) cannonBaseRadius, cannonPaint); // рисуем базу пушки
+
+        canvas.drawLine(blocker.start.x, blocker.start.y, blocker.end.x, blocker.end.y, blockerPaint); //рисуем блок
+
+        Point currentPoint = new Point(); //начало текущей секции мишени
+
+        currentPoint.x = target.start.x;
+        currentPoint.y = target.start.y;
+
+        //рисуем мишени
+        for(int i = 1; i <= TARGET_PIECES; ++i){
+
+            if(!hitStates[i - 1]){ //если не попал то рисуем
+                if(i % 2 == 0){ //чередовашка
+                    targetPaint.setColor(Color.YELLOW);
+                }
+                else{
+                    targetPaint.setColor(Color.BLUE);
+                }
+                canvas.drawLine(currentPoint.x, currentPoint.y, target.end.x, (int) (currentPoint.y + pieceLength), targetPaint);
+            }
+            currentPoint.y += pieceLength; // смещаемся к следующей секции
+        }
+    }
+
+    
 
 }
