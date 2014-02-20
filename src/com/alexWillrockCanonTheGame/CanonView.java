@@ -2,6 +2,7 @@ package com.alexWillrockCanonTheGame;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.media.AudioManager;
@@ -12,7 +13,6 @@ import android.view.SurfaceView;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.jar.Attributes;
 
 public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
@@ -96,7 +96,7 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
         hitStates = new boolean[TARGET_PIECES];
 
-        //звук
+        //звук c одним потоком
         soundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
 
         soundMap = new HashMap<Integer, Integer>();
@@ -110,4 +110,56 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
         targetPaint = new Paint();
         backgroundPaint = new Paint();
     }
+
+    @Override
+    protected  void onSizeChanged(int w, int h, int oldw, int oldh){
+        super.onSizeChanged(w, h, oldw, oldh);
+
+        screenWidth = w;
+        screenHeigth = h;
+
+
+        //пушка
+        cannonBaseRadius = h / 18; //радиус основания в маштабе
+        cannonLength = w / 8; //длина в маштабе
+        barrelEnd = new Point(cannonLength, h / 2); //конец пушки
+
+                //ядро
+        cannonballRadius = w / 36; //ядро в маштабе
+        cannonballSpeed = w * 3 / 2; //скорость в маштабе
+
+
+        //блок
+        lineWidth = w / 24; //ширина блока и мишени в маштабе
+
+        blockerDistance = w * 5 / 8; // ширина поля
+        blockedBeginning = h / 8; // от верха до блока
+        blockerEnd = h * 3 / 8; //снизу до блока
+        initialBlockerVelocity = h / 2; //начальная скорость
+
+        //задаем начальное положение блока
+        blocker.start = new Point(blockerDistance, blockedBeginning);
+        blocker.end = new Point(blockerDistance, blockerEnd);
+
+        //мишень
+        targetDistance = w * 7 / 8;
+        targetBeginning = h / 8;
+        targetEnd = h * 7 / 8;
+        pieceLength = (targetEnd - targetBeginning) / TARGET_PIECES;
+        initialTargetVelocity = -h / 4;
+        target.start = new Point(targetDistance, targetBeginning);
+        target.end = new Point(targetDistance, targetEnd);
+
+        //элементы игры
+        textPaint.setTextSize(w / 20);
+        textPaint.setAntiAlias(true); //сглаживание
+        cannonPaint.setStrokeWidth(lineWidth * 1.5f); //толщани линии
+        targetPaint.setStrokeWidth(lineWidth);
+        blockerPaint.setStrokeWidth(lineWidth);
+
+        backgroundPaint.setColor(Color.WHITE); //цвет фона
+
+        newGame();// запуск игры
+    }
+
 }
