@@ -8,6 +8,7 @@ import android.graphics.Point;
 import android.media.AudioManager;
 import android.media.SoundPool;
 import android.util.AttributeSet;
+import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
@@ -269,7 +270,49 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
             cannonThread.setRunning(false);
             showGameOvweDialog(R.string.lose);
         }
+    }
 
+    //выстрел
+    public void fireCannonball(MotionEvent event){
+        if(cannonballOnScreen){ ///если ядро на экране
+             return; //выключить
+        }
+
+        double angle = alingCannon(event); //угол наклона пушки
+
+        cannonball.x = cannonballRadius; //налон по х
+        cannonball.y = screenHeigth / 2; //выстрел по вертикали
+
+        cannonballVelocityX = (int) (cannonballSpeed * Math.sin(angle)); // x - компонента скорости
+        cannonballVelocityY = (int) (cannonballSpeed * Math.cos(angle)); // y - комнонета скорости
+
+        cannonballOnScreen = true; //отображение на экране
+        ++ shotfFired;
+
+        soundPool.play(soundMap.get(CANNON_SOUND_ID), 1, 1, 1, 0, 1f);
+    }
+
+    //наклон пушки
+    public double alingCannon(MotionEvent event){
+
+        Point touchPoint = new Point((int) event.getX(), (int) event.getY()); // место касания
+        double centerMinusY = (screenHeigth / 2 - touchPoint.y); //расстояние до центра экрана
+
+        double angle = 0; //угол
+
+        if(centerMinusY != 0){ //если коснулиь верх
+            angle = Math.atan((double) touchPoint.x / centerMinusY); // угол наклона относительно горизонта
+        }
+
+        if(touchPoint.y > screenHeigth / 2){ //если коснулись низ
+            angle += Math.PI;
+        }
+
+        //конечное положение ствола
+        barrelEnd.x = (int) (cannonLength * Math.sin(angle));
+        barrelEnd.y = (int) ( -cannonLength * Math.cos(angle) + screenHeigth / 2);
+
+        return angle;
     }
 
 }

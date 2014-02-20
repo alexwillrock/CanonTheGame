@@ -98,7 +98,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="180">
+            <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
@@ -107,11 +107,11 @@
       <file leaf-file-name="CanonView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="269" column="46" selection-start="10406" selection-end="10406" vertical-scroll-proportion="1.8108108" vertical-offset="2494" max-vertical-offset="4215">
+            <state line="20" column="20" selection-start="572" selection-end="572" vertical-scroll-proportion="-4.3710246" vertical-offset="4011" max-vertical-offset="4860">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9332#9344#0" expanded="true" />
-                <element signature="e#10391#10404#0" expanded="true" />
+                <element signature="e#9365#9377#0" expanded="true" />
+                <element signature="e#10424#10437#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,11 +129,8 @@
       <file leaf-file-name="CanonTheGame.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonTheGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="6" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-              <folding>
-                <element signature="e#1466#1706#0" expanded="true" />
-                <element signature="e#1699#1700#0" expanded="true" />
-              </folding>
+            <state line="56" column="6" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="960">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,6 +188,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,7 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -316,6 +313,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="SearchEverywhereHistory" value="s" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -547,21 +545,21 @@
       <created>1392864176153</created>
       <updated>1392864176153</updated>
       <workItem from="1392864413162" duration="1844000" />
-      <workItem from="1392866633830" duration="8835000" />
+      <workItem from="1392866633830" duration="8882000" />
+      <workItem from="1392897114302" duration="1307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10679000" />
+    <option name="totallyTimeSpent" value="12033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="819" y="22" width="1101" height="982" extended-state="6" />
+    <frame x="819" y="22" width="1101" height="982" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17910448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -584,6 +582,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17910448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -628,6 +627,55 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="270" column="9" selection-start="10416" selection-end="10416" vertical-scroll-proportion="0.0" vertical-offset="3364" max-vertical-offset="4215">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9365#9377#0" expanded="true" />
+            <element signature="e#10424#10437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/Line.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="300">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonTheGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="6" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="55" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="44" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="195">
           <folding />
         </state>
@@ -643,10 +691,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonTheGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="45" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
-          <folding>
-            <element signature="e#1466#1706#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -676,7 +721,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="180">
+        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
           <folding />
         </state>
       </provider>
@@ -684,20 +729,17 @@
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonTheGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="6" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
-          <folding>
-            <element signature="e#1466#1706#0" expanded="true" />
-            <element signature="e#1699#1700#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="269" column="46" selection-start="10406" selection-end="10406" vertical-scroll-proportion="1.8108108" vertical-offset="2494" max-vertical-offset="4215">
+        <state line="20" column="20" selection-start="572" selection-end="572" vertical-scroll-proportion="-4.3710246" vertical-offset="4011" max-vertical-offset="4860">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9332#9344#0" expanded="true" />
-            <element signature="e#10391#10404#0" expanded="true" />
+            <element signature="e#9365#9377#0" expanded="true" />
+            <element signature="e#10424#10437#0" expanded="true" />
           </folding>
         </state>
       </provider>
