@@ -157,7 +157,8 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
         //элементы игры
         textPaint.setTextSize(w / 20);
         textPaint.setAntiAlias(true); //сглаживание
-        cannonPaint.setStrokeWidth(lineWidth * 1.5f); //толщани линии
+       // cannonPaint.setStrokeWidth(lineWidth * 1.5f); //толщани линии
+        //cannonPaint.setStrokeWidth(lineWidth * 1.5f);
         targetPaint.setStrokeWidth(lineWidth);
         blockerPaint.setStrokeWidth(lineWidth);
 
@@ -270,7 +271,7 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
             timeLeft = 0.0;
             gameOver = true; //игра закончилась
             cannonThread.setRunning(false);
-            showGameOvweDialog(R.string.lose);
+            showGameDialog(R.string.lose);
         }
     }
 
@@ -398,19 +399,77 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
     }
 
 
+    //создание оболочки
     @Override
-    public void surfaceCreated(SurfaceHolder surfaceHolder) {
-
+    public void surfaceCreated(SurfaceHolder holder) {
+        cannonThread = new CannonThread(holder);
+        cannonThread.setRunning(true);
+        cannonThread.start();
     }
 
     @Override
     public void surfaceChanged(SurfaceHolder surfaceHolder, int format, int width, int heigth) {
     }
 
+    //разрушение оболочки
     @Override
     public void surfaceDestroyed(SurfaceHolder surfaceHolder) {
+        boolean retry = true;
+        cannonThread.setRunning(false);
 
+        while (retry){
+            try {
+                cannonThread.join();
+                retry = false;
+            }
+            catch (InterruptedException e){
+
+            }
+        }
     }
 
-    
+    private class CannonThread extends Thread{
+
+        private SurfaceHolder surfaceHolder; //управление рисование
+        private boolean threadIsRunning = true; // бросок по умолчанию
+
+        //контейнер оболочки
+        public CannonThread(SurfaceHolder holder){
+            surfaceHolder = holder;
+            setName("CannonThread");
+        }
+
+        public void setRunning(boolean running){
+            threadIsRunning = running;
+        }
+
+        @Override
+        public void run(){
+            Canvas canvas = null;
+            long previusFrameTime = System.currentTimeMillis();
+
+            while (threadIsRunning){
+                try {
+                    canvas = surfaceHolder.lockCanvas();
+                    //блокируем поток
+
+                    //один поток единовременно
+
+                    synchronized (surfaceHolder){
+                        long currentTime = System.currentTimeMillis();
+                        double elapsedTimeMs = currentTime - previusFrameTime;
+                        totalTimeElapsed += elapsedTimeMs / 1000.0;
+                        updatePositions(elapsedTimeMs); // обновляем позиции
+                        drawGameElements(canvas); //рисуем
+                        previusFrameTime = currentTime; //обновление времени
+                    }
+                }
+                finally {
+                    if(canvas != null){
+                        surfaceHolder.unlockCanvasAndPost(canvas); //раблокируем поток
+                    }
+                }
+            }
+        }
+    }
 }

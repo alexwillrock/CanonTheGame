@@ -77,7 +77,7 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="55" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="345">
+            <state line="9" column="55" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
               <folding />
             </state>
           </provider>
@@ -86,7 +86,7 @@
       <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="240">
+            <state line="8" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
               <folding />
             </state>
           </provider>
@@ -98,28 +98,48 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+            <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="180">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CanonView.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CanonView.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="414" column="4" selection-start="15174" selection-end="15174" vertical-scroll-proportion="0.8607889" vertical-offset="5468" max-vertical-offset="6330">
+            <state line="160" column="10" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.0" vertical-offset="1971" max-vertical-offset="7215">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#9441#9453#0" expanded="true" />
-                <element signature="e#10500#10513#0" expanded="true" />
-                <element signature="e#12250#12314#0" expanded="true" />
-                <element signature="e#13947#14042#0" expanded="true" />
-                <element signature="e#14085#14104#0" expanded="true" />
-                <element signature="e#14106#14348#0" expanded="true" />
-                <element signature="e#14337#14338#0" expanded="true" />
-                <element signature="e#14400#14640#0" expanded="true" />
-                <element signature="e#14621#14622#0" expanded="true" />
+                <element signature="e#9499#9511#0" expanded="true" />
+                <element signature="e#10554#10567#0" expanded="true" />
+                <element signature="e#12304#12368#0" expanded="true" />
+                <element signature="e#14001#14096#0" expanded="true" />
+                <element signature="e#14139#14158#0" expanded="true" />
+                <element signature="e#14160#14402#0" expanded="true" />
+                <element signature="e#14391#14392#0" expanded="true" />
+                <element signature="e#14454#14694#0" expanded="true" />
+                <element signature="e#14675#14676#0" expanded="true" />
+                <element signature="e#16045#16046#0" expanded="true" />
+                <element signature="e#16094#16095#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Handler.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../../adt-bundle-mac-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1245">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Looper.class" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://$PROJECT_DIR$/../../adt-bundle-mac-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Looper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.8143608" vertical-offset="0" max-vertical-offset="571">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,7 +147,7 @@
       <file leaf-file-name="Line.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/Line.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="300">
+            <state line="11" column="30" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
               <folding />
             </state>
           </provider>
@@ -162,10 +182,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="819" />
     <option name="y" value="22" />
-    <option name="width" value="1101" />
-    <option name="height" value="982" />
+    <option name="width" value="1920" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -321,13 +340,35 @@
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="SearchEverywhereHistory" value="s" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.alexWillrockCanonTheGame" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android Application.CanonTheGame">
+    <configuration default="false" name="CanonTheGame" type="AndroidRunConfigurationType" factoryName="Android Application" temporary="true">
+      <module name="CanonTheGame" />
+      <option name="ACTIVITY_CLASS" value="com.alexWillrockCanonTheGame.CanonTheGame" />
+      <option name="MODE" value="specific_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <RunnerSettings RunnerId="AndroidDebugRunner" />
+      <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -539,7 +580,14 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Android Application.CanonTheGame" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Android Application.CanonTheGame" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -553,20 +601,21 @@
       <updated>1392864176153</updated>
       <workItem from="1392864413162" duration="1844000" />
       <workItem from="1392866633830" duration="8882000" />
-      <workItem from="1392897114302" duration="3954000" />
+      <workItem from="1392897114302" duration="6575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14680000" />
+    <option name="totallyTimeSpent" value="17301000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="819" y="22" width="1101" height="982" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="984" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17910448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -574,22 +623,22 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847533" sideWeight="0.07880724" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32847533" sideWeight="0.92119277" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25023606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14110756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17910448" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -674,15 +723,17 @@
         <state line="270" column="9" selection-start="10416" selection-end="10416" vertical-scroll-proportion="0.0" vertical-offset="3364" max-vertical-offset="4215">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9441#9453#0" expanded="true" />
-            <element signature="e#10500#10513#0" expanded="true" />
-            <element signature="e#12250#12314#0" expanded="true" />
-            <element signature="e#13947#14042#0" expanded="true" />
-            <element signature="e#14085#14104#0" expanded="true" />
-            <element signature="e#14106#14348#0" expanded="true" />
-            <element signature="e#14337#14338#0" expanded="true" />
-            <element signature="e#14400#14640#0" expanded="true" />
-            <element signature="e#14621#14622#0" expanded="true" />
+            <element signature="e#9499#9511#0" expanded="true" />
+            <element signature="e#10554#10567#0" expanded="true" />
+            <element signature="e#12304#12368#0" expanded="true" />
+            <element signature="e#14001#14096#0" expanded="true" />
+            <element signature="e#14139#14158#0" expanded="true" />
+            <element signature="e#14160#14402#0" expanded="true" />
+            <element signature="e#14391#14392#0" expanded="true" />
+            <element signature="e#14454#14694#0" expanded="true" />
+            <element signature="e#14675#14676#0" expanded="true" />
+            <element signature="e#16045#16046#0" expanded="true" />
+            <element signature="e#16094#16095#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -739,6 +790,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="180">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="55" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
@@ -753,23 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="68" selection-start="401" selection-end="401" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="38" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonTheGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="65" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
@@ -779,19 +830,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="414" column="4" selection-start="15174" selection-end="15174" vertical-scroll-proportion="0.8607889" vertical-offset="5468" max-vertical-offset="6330">
+        <state line="160" column="10" selection-start="5761" selection-end="5761" vertical-scroll-proportion="0.0" vertical-offset="1971" max-vertical-offset="7215">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#9441#9453#0" expanded="true" />
-            <element signature="e#10500#10513#0" expanded="true" />
-            <element signature="e#12250#12314#0" expanded="true" />
-            <element signature="e#13947#14042#0" expanded="true" />
-            <element signature="e#14085#14104#0" expanded="true" />
-            <element signature="e#14106#14348#0" expanded="true" />
-            <element signature="e#14337#14338#0" expanded="true" />
-            <element signature="e#14400#14640#0" expanded="true" />
-            <element signature="e#14621#14622#0" expanded="true" />
+            <element signature="e#9499#9511#0" expanded="true" />
+            <element signature="e#10554#10567#0" expanded="true" />
+            <element signature="e#12304#12368#0" expanded="true" />
+            <element signature="e#14001#14096#0" expanded="true" />
+            <element signature="e#14139#14158#0" expanded="true" />
+            <element signature="e#14160#14402#0" expanded="true" />
+            <element signature="e#14391#14392#0" expanded="true" />
+            <element signature="e#14454#14694#0" expanded="true" />
+            <element signature="e#14675#14676#0" expanded="true" />
+            <element signature="e#16045#16046#0" expanded="true" />
+            <element signature="e#16094#16095#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../adt-bundle-mac-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="78" column="0" selection-start="3379" selection-end="3379" vertical-scroll-proportion="0.0" vertical-offset="674" max-vertical-offset="1245">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../adt-bundle-mac-x86_64-20131030/sdk/platforms/android-19/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.8143608" vertical-offset="0" max-vertical-offset="571">
+          <folding />
         </state>
       </provider>
     </entry>
