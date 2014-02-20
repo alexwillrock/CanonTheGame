@@ -107,7 +107,7 @@
       <file leaf-file-name="CanonView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="32" selection-start="5800" selection-end="5800" vertical-scroll-proportion="1.3125" vertical-offset="1281" max-vertical-offset="2565">
+            <state line="189" column="33" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.8090278" vertical-offset="2136" max-vertical-offset="3000">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -545,12 +545,12 @@
       <created>1392864176153</created>
       <updated>1392864176153</updated>
       <workItem from="1392864413162" duration="1844000" />
-      <workItem from="1392866633830" duration="5917000" />
+      <workItem from="1392866633830" duration="6455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7761000" />
+    <option name="totallyTimeSpent" value="8299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="819" y="22" width="1101" height="982" extended-state="6" />
@@ -691,7 +691,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="32" selection-start="5800" selection-end="5800" vertical-scroll-proportion="1.3125" vertical-offset="1281" max-vertical-offset="2565">
+        <state line="189" column="33" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.8090278" vertical-offset="2136" max-vertical-offset="3000">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

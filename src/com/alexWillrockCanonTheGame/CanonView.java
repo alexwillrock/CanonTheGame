@@ -162,4 +162,33 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
         newGame();// запуск игры
     }
 
+    public void newGame(){
+
+        for(int i = 0; i < TARGET_PIECES; ++i){ //восстанавливаем все мишени
+            hitStates[i] = false;
+        }
+
+        targetPiecesHit = 0; //обнулить попдания
+        blockerVelocity = initialBlockerVelocity; //скорость по началу блока
+        targetVelocity = initialTargetVelocity; //скорость по начала мишени
+
+        timeLeft = 10; //обратный отсчет
+        cannonballOnScreen = false; //ядра нет на экране
+        shotfFired = 0; //обнулились выстрелы
+
+        totalTimeElapsed = 0.0; // начальное время
+
+        blocker.start.set(blockerDistance, blockedBeginning);
+        blocker.end.set(targetDistance, blockerEnd);
+
+        target.start.set(targetDistance, targetBeginning);
+        target.end.set(blockerDistance, targetEnd);
+
+        if(gameOver){
+            gameOver = false; //игра не завершена
+            cannonThread = new CannonThread(getHolder());
+            cannonThread.start();
+        }
+    }
+
 }
