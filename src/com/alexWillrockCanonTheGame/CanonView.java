@@ -13,6 +13,7 @@ import android.view.SurfaceView;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.SortedMap;
 
 public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
@@ -189,6 +190,86 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
             cannonThread = new CannonThread(getHolder());
             cannonThread.start();
         }
+    }
+
+    //обновление элементов игры
+    private void updatePositions(double elapsedTimeMS){
+        double interval = elapsedTimeMS / 1000.0;
+        if(cannonballOnScreen){ //если выстрел ядро на экране
+            cannonball.x += interval * cannonballVelocityX;
+            cannonball.y += interval * cannonballVelocityY;
+
+            //столкновение с блоков
+            if(cannonball.x + cannonballRadius > blockerDistance
+                    && cannonball.x - cannonballRadius < blockerDistance
+                    && cannonball.y + cannonballRadius > blocker.start.y &&
+                    cannonball.y - cannonballRadius < blocker.end.y){
+
+                cannonballVelocityX *= - 1; //ядро ударяется и летит обратно
+                timeLeft -= MISS_PENALTY; //штраф игрока
+
+                soundPool.play(soundMap.get(BLOCKER_SOUND_ID), 1, 1, 1, 0, 1f);
+            }
+            else
+                if(cannonball.x + cannonballRadius > screenHeigth ||
+                        cannonball.x - cannonballRadius < 0){
+                    cannonballOnScreen = false; //улетел
+                }
+                else
+                    if(cannonball.y + cannonballRadius > screenHeigth
+                            ||cannonball.y - cannonballRadius < 0){
+                        cannonballOnScreen = false; //улетел
+                    }
+                    else //столкуля с мишенью
+                        if(cannonball.x + cannonballRadius > targetDistance
+                                && cannonball.x - cannonballRadius < targetDistance
+                                && cannonball.y + cannonballRadius > target.start.y
+                                && cannonball.y - cannonballRadius < target.end.y){
+                                    //определяем номер секции
+                                    int section = (int) ((cannonball.y - target.start.y) / pieceLength);
+
+                                    if ((section >= 0 && section < TARGET_PIECES) && !hitStates[section]){
+                                        hitStates[section] = true; //попал
+                                        cannonballOnScreen = false; //ядро улетело
+                                        timeLeft += HIT_REWARD; //поблажка
+
+                                        soundPool.play(soundMap.get(TARGET_SOUND_ID), 1, 1, 1,0, 1f);
+
+                                        if(++targetPiecesHit == TARGET_PIECES){
+                                            cannonThread.setRunning(false);
+                                            showGameDialog(R.string.win);
+                                            gameOver = true; //игра завершена
+                                        }
+                                    }
+                        }
+        }
+
+        //обновление позиции блока
+        double blockerUpdate = interval * blockerVelocity;
+        blocker.start.y += blockerUpdate;
+        blocker.end.y += blockerUpdate;
+
+        //обновлеение позиции мишени
+        double targetUpdate = interval * targetVelocity;
+        target.start.y += targetUpdate;
+        target.end.y += targetUpdate;
+
+        //обратное движение при достижении конца экрана
+        if(blocker.start.y < 0 || blocker.end.y > screenHeigth){
+            blockerVelocity *= -1;
+        }
+        if(target.start.y < 0 || target.end.y > screenHeigth){
+            targetVelocity *= -1;
+        }
+
+        timeLeft -= interval; //изменяем время
+        if(timeLeft <= 0){
+            timeLeft = 0.0;
+            gameOver = true; //игра закончилась
+            cannonThread.setRunning(false);
+            showGameOvweDialog(R.string.lose);
+        }
+
     }
 
 }

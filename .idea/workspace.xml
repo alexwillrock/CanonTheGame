@@ -107,9 +107,11 @@
       <file leaf-file-name="CanonView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="189" column="33" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.8090278" vertical-offset="2136" max-vertical-offset="3000">
+            <state line="269" column="46" selection-start="10406" selection-end="10406" vertical-scroll-proportion="1.8108108" vertical-offset="2494" max-vertical-offset="4215">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#9332#9344#0" expanded="true" />
+                <element signature="e#10391#10404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -545,12 +547,12 @@
       <created>1392864176153</created>
       <updated>1392864176153</updated>
       <workItem from="1392864413162" duration="1844000" />
-      <workItem from="1392866633830" duration="6455000" />
+      <workItem from="1392866633830" duration="8835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8299000" />
+    <option name="totallyTimeSpent" value="10679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="819" y="22" width="1101" height="982" extended-state="6" />
@@ -691,9 +693,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="189" column="33" selection-start="6749" selection-end="6749" vertical-scroll-proportion="0.8090278" vertical-offset="2136" max-vertical-offset="3000">
+        <state line="269" column="46" selection-start="10406" selection-end="10406" vertical-scroll-proportion="1.8108108" vertical-offset="2494" max-vertical-offset="4215">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#9332#9344#0" expanded="true" />
+            <element signature="e#10391#10404#0" expanded="true" />
           </folding>
         </state>
       </provider>
