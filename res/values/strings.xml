@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">CanonTheGame</string>
+    <string name="result_format">Выстрелов сделано: %1$d\n
+    время затрачено: %2$.1f</string>
+    <string name="reset_game">Начать сначала</string>
+    <string name="win">победил</string>
+    <string name="lose">проиграл</string>
+    <string name="time_remaing_format">Времени осталось: %.1f секунд</string>
 </resources>
