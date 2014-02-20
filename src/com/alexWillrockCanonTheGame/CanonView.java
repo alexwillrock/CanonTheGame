@@ -1,13 +1,18 @@
 package com.alexWillrockCanonTheGame;
 
 import android.app.Activity;
+import android.content.Context;
 import android.graphics.Paint;
 import android.graphics.Point;
+import android.media.AudioManager;
 import android.media.SoundPool;
+import android.util.AttributeSet;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 
+import java.util.HashMap;
 import java.util.Map;
+import java.util.jar.Attributes;
 
 public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
 
@@ -79,4 +84,30 @@ public class CanonView extends SurfaceView implements SurfaceHolder.Callback{
     private Paint blockerPaint; //блок
     private Paint targetPaint; //мишень
     private Paint backgroundPaint; //для обнуления
-   }
+
+    public CanonView(Context context, AttributeSet attrs){
+        super(context, attrs);
+        activity = (Activity) context;
+
+        getHolder().addCallback(this); //слушатель нажитий
+        blocker = new Line();
+        target = new Line();
+        cannonball = new Point();
+
+        hitStates = new boolean[TARGET_PIECES];
+
+        //звук
+        soundPool = new SoundPool(1, AudioManager.STREAM_MUSIC, 0);
+
+        soundMap = new HashMap<Integer, Integer>();
+        soundMap.put(TARGET_SOUND_ID, soundPool.load(context, R.raw.target_hit, 1));
+        soundMap.put(CANNON_SOUND_ID, soundPool.load(context, R.raw.cannon_fire, 1));
+        soundMap.put(BLOCKER_SOUND_ID, soundPool.load(context, R.raw.blocker_hit, 1));
+
+        textPaint = new Paint();
+        cannonballPaint = new Paint();
+        blockerPaint = new Paint();
+        targetPaint = new Paint();
+        backgroundPaint = new Paint();
+    }
+}

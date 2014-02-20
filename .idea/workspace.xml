@@ -107,8 +107,10 @@
       <file leaf-file-name="CanonView.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="34" selection-start="2980" selection-end="2980" vertical-scroll-proportion="1.2673612" vertical-offset="0" max-vertical-offset="1215">
-              <folding />
+            <state line="87" column="50" selection-start="3208" selection-end="3208" vertical-scroll-proportion="0.44444445" vertical-offset="921" max-vertical-offset="1785">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -543,12 +545,12 @@
       <created>1392864176153</created>
       <updated>1392864176153</updated>
       <workItem from="1392864413162" duration="1844000" />
-      <workItem from="1392866633830" duration="3116000" />
+      <workItem from="1392866633830" duration="4386000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4960000" />
+    <option name="totallyTimeSpent" value="6230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="819" y="22" width="1101" height="982" extended-state="6" />
@@ -689,8 +691,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alexWillrockCanonTheGame/CanonView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="34" selection-start="2980" selection-end="2980" vertical-scroll-proportion="1.2673612" vertical-offset="0" max-vertical-offset="1215">
-          <folding />
+        <state line="87" column="50" selection-start="3208" selection-end="3208" vertical-scroll-proportion="0.44444445" vertical-offset="921" max-vertical-offset="1785">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
